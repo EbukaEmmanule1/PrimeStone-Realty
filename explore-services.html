@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Services - PrimeStone Realty</title>
+    <link rel="stylesheet" href="explore-services.css">
+    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo-container">
+      <img src="img/prime-logo.png" alt="Logo" class="logo">
+      <p class="site-name">PrimeStone Realty</p>
+    </div>
+      <nav class="navbar">
+        
+          <ul>
+              <li><a class="b" href="index.html">Home</a></li>
+              <li><a class="b" href="index.html">About Us</a></li>
+              <li><a class="b" href="index.html">Services</a></li>
+              <li><a class="b" href="index.html">Contact</a></li>
+              <a href="login.html"><button class="login">Login</button></a>
+          </ul>
+              
+      </nav>
+      <!-- Hamburger Menu -->
+    <div class="hamburger" id="hamburger">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+  </header>
+
+    <!-- Explore Services Section -->
+    <section class="explore-services">
+      <div class="container">
+          <h2>Explore Our Services</h2>
+          <p>We offer a comprehensive range of real estate services tailored to your specific needs. Explore our services to learn more about how we can help you achieve your property goals.</p>
+          
+          <!-- Service Cards -->
+          <div class="services-grid">
+              <div class="service-card">
+                  <img src="img/Home7.jpg" alt="Residential Properties">
+                  <h3>Residential Properties</h3>
+                  <p>We provide the best listings of residential properties, from family homes to luxury apartments.</p>
+                  <a href="#" class="read-more">Read More</a>
+              </div>
+              <div class="service-card">
+                  <img src="img/Home14.avif" alt="Commercial Properties">
+                  <h3>Commercial Properties</h3>
+                  <p>Explore premium commercial spaces that are perfect for your business needs.</p>
+                  <a href="#" class="read-more">Read More</a>
+              </div>
+              <div class="service-card">
+                  <img src="img/Home8.jpg" alt="Property Management">
+                  <h3>Property Management</h3>
+                  <p>Our expert property management services ensure your investments are taken care of.</p>
+                  <a href="#" class="read-more">Read More</a>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- Consultation Section -->
+  <section class="consultation">
+      <div class="container">
+          <h2>Book a Free Consultation</h2>
+          <p>Get personalized advice from our experienced real estate professionals. Schedule a consultation today!</p>
+          <form id="consultation-form">
+              <input type="text" id="name" name="name" placeholder="Your Name" required>
+              <input type="email" id="email" name="email" placeholder="Your Email" required>
+              <input type="text" id="phone" name="phone" placeholder="Your Phone Number" required>
+              <textarea id="message" name="message" placeholder="Your Message or Inquiry" rows="4"></textarea>
+              <button type="submit">Submit</button>
+          </form>
+          <p class="form-alert" id="form-alert"></p>
+      </div>
+  </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 PrimeStone Realty. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

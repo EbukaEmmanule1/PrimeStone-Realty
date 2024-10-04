@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrimeStone Realty</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="about-us.css">
+    <link rel="stylesheet" href="our-services.css">
+    <link rel="stylesheet" href="contact-us.css">
+    <!-- <link rel="stylesheet" href="styless.css"> -->
+    
+</head>
+<body>
+    <header>
+      <div class="logo-container">
+        <img src="img/prime-logo.png" alt="Logo" class="logo">
+        <p class="site-name">PrimeStone Realty</p>
+      </div>
+        <nav class="navbar">
+          
+            <ul>
+                <li><a class="b" href="#home">Home</a></li>
+                <li><a class="b" href="#about-us">About Us</a></li>
+                <li><a class="b" href="#our-services">Services</a></li>
+                <li><a class="b" href="#contact-us">Contact</a></li>
+                <li><a class="c" href="login.html">login</a></li>
+                <a href="login.html"><button class="login">Login</button></a>
+            </ul>
+                
+        </nav>
+        <!-- Hamburger Menu -->
+      <div class="hamburger" id="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </header>
+    <main>
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="Home-text1">Welcome to PrimeStone Realty</h1>
+            <p class="Home-text2">Your trusted partner in finding the perfect home.</p>
+            <br>
+            <br>
+            <br>
+            <a href="explore-services.html" class="btn">Explore Services</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-us" id="about-us">
+        <div class="container">
+            <h1>About PrimeStone Realty</h1>
+            <p>We are dedicated to helping you find the best properties that suit your needs. Our expertise lies in providing top-notch real estate services to meet your every requirement.</p>
+            
+            
+            <!-- Image Slider Section -->
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide fade">
+                        <img class="img1" src="img/Home7.jpg" alt="Residential Properties">
+                    </div>
+                    <div class="slide fade">
+                        <img class="img1" src="img/Home8.jpg" alt="Commercial Spaces">
+                    </div>
+                    <div class="slide fade">
+                        <img class="img1" src="img/Home10.jpg" alt="Prime Locations">
+                    </div>
+                    <div class="slide fade">
+                        <img class="img1" src="img/Home11.avif" alt="Real Estate">
+                    </div>
+                    <div class="slide fade">
+                        <img class="img1" src="img/Home12.avif" alt="Home for sale">
+                    </div>
+                    <div class="slide fade">
+                        <img class="img1" src="img/Home13.avif" alt="Real estate property">
+                    </div>
+                    <div class="slide fade">
+                        <img class="img1" src="img/Home14.avif" alt="Architecture">
+                    </div>
+                    <div class="slide fade">
+                        <img class="img1" src="img/Home15.avif" alt="Luxury House">
+                    </div>
+                    <div class="slide fade">
+                        <img class="img1" src="img/Home16.avif" alt="Villa & Pool">
+                    </div>
+                    <div class="slide fade">
+                        <img class="img1" src="img/Home17.avif" alt="Living room">
+                    </div>
+                    <div class="slide fade">
+                        <img class="img1" src="img/Home18.webp" alt="Construction workers">
+                    </div>
+                    <div class="slide fade">
+                        <img class="img1" src="img/Home19.jpg" alt="Construction Employees">
+                    </div>
+                    <div class="slide fade">
+                        <img class="img1" src="img/Home20.jpg" alt="Construction workers">
+                    </div>
+                </div>
+                <!-- Navigation Buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            <div class="image-caption">Residential Properties</div>
+        </div>
+    </section>
+
+
+     <!-- Parallax Section -->
+     <div class="parallax"></div>
+
+        <!-- Our Services Section -->
+    <section class="our-services" id="our-services">
+        <div class="container">
+            <h1>Our Services</h1>
+            <p>At PrimeStone Realty, we offer a wide range of services to meet all your real estate needs.</p>
+            <div class="services">
+                <div class="service-card" data-animation="fadeInLeft">
+                    <div class="service-icon">&#127968;</div>
+                    <h3>Residential Real Estate</h3>
+                    <p>We help you find the perfect home, from luxurious estates to cozy apartments.</p>
+                </div>
+                <div class="service-card" data-animation="fadeInUp">
+                    <div class="service-icon">&#128736;</div>
+                    <h3>Commercial Properties</h3>
+                    <p>From office spaces to retail stores, we assist you in securing the best commercial properties.</p>
+                </div>
+                <div class="service-card" data-animation="fadeInRight">
+                    <div class="service-icon">&#127970;</div>
+                    <h3>Property Management</h3>
+                    <p>Our property management services ensure that your assets are well taken care of.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+       <!-- Contact Us Section -->
+       <section class="contact-us" id="contact-us">
+        <div class="container-con">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you! Whether you're looking for a new home or want to discuss commercial opportunities, reach out to us today.</p>
+
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+
+                    <div class="form-status"></div> <!-- This is where the JS feedback message will appear -->
+                </form>
+            </div>
+        </div>
+    </section>
+   
+
+</main>
+    <footer>
+        <p>&copy; 2024 PrimeStone Realty. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

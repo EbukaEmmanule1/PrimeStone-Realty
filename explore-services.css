@@ -1,0 +1,199 @@
+/* Explore Services Section */
+.explore-services {
+  flex: 1;
+  padding: 50px 20px;
+  background-color: white;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+  margin-bottom: 100px;
+  padding-top: 100px;
+}
+
+.explore-services h2 {
+  font-size: 36px;
+  color: #0044cc;
+  margin-bottom: 20px;
+}
+
+.explore-services p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+/* Service Cards */
+.services-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  background-color: #f0f8ff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+.service-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  color: #0044cc;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.read-more {
+  background-color: #0044cc;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+  background-color: #003399;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #0044cc;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .hamburger {
+      display: flex;
+  }
+
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 15px;
+  }
+
+  .nav-links.active {
+      display: flex;
+  }
+
+  .services-grid {
+      flex-direction: column;
+  }
+
+  .service-card {
+      width: 100%;
+  }
+}
+
+/* Consultation Section */
+.consultation {
+  background-color: #0044cc;
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.consultation h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.consultation p {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+#consultation-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#consultation-form input, 
+#consultation-form textarea {
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+#consultation-form button {
+  background-color: white;
+  color: #0044cc;
+  padding: 15px 30px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#consultation-form button:hover {
+  background-color: #003399;
+  color: white;
+}
+
+/* Alert Message */
+.form-alert {
+  margin-top: 20px;
+  color: #ff6666;
+  font-size: 14px;
+  display: none;
+}
+
+/* Responsive Styles for Consultation Section */
+@media (max-width: 768px) {
+  .consultation {
+      padding: 30px 10px;
+  }
+
+  #consultation-form input, 
+  #consultation-form textarea {
+      width: 100%;
+  }
+}

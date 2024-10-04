@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #007BFF; /* Blue */
+  color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+  height: 80px;
+}
+
+.logo-container {
+  display: flex; 
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+  margin-right: 15px;
+}
+.site-name {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+} 
+
+.site-name {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar .b {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.navbar .c{
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.5s;
+  display: none;
+}
+
+.navbar .b .c:hover{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: white;
+  color: #007BFF;
+  font-weight: bold;
+}
+.login{
+  background-color: white;
+  color: #007BFF;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 20px;
+  border: none;
+  margin-top: -40px;
+}
+
+.login:hover{
+  background-color: #0056b3;
+  color: white;
+  font-weight: bold;
+  
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px;
+  transition: transform 0.3s ease;
+}
+
+.hamburger.open .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+
+.line {
+  height: 3px;
+  width: 25px;
+  background-color: white;
+  margin: 4px 0;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(img/Home1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #01091162; /* Light background */
+  background-blend-mode: darken;
+  text-align: center;
+  animation: change-bg 17s infinite;
+  flex-direction: column;
+}
+
+@keyframes change-bg {
+  0%, 100% {
+    background-image: url(img/Home6.jpg);
+  }
+  33% {
+    background-image: url(img/Home3.jpeg);
+  }
+  66% {
+    background-image: url(img/Home5.jpg);
+  }
+}
+
+.hero-content {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.Home-text1{
+  color: white;
+  font-weight: bolder;
+  font-size: 60px;
+  margin-top: 40px;
+}
+
+.Home-text2{
+  color: white;
+  font-size: 30px;
+  font-style: italic;
+  margin-top: 30px;
+}
+
+.btn {
+  /* padding-bottom: -60px; */
+  background-color: #007BFF; /* Blue */
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  
+}
+
+.btn:hover {
+  background-color: #0056b3; /* Darker blue */
+  font-weight: bold;
+}
+
+section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+footer {
+  background-color: #007BFF; /* Blue */
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar {
+      display: none;
+  }
+
+  .hamburger {
+      display: flex;
+  }
+
+  .navbar.active {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: #007BFF; /* Blue */
+      padding: 10px 20px;
+      width: 100%;
+  }
+
+  .login{
+    display: none;
+  }
+  .c{
+    display: block;
+  }
+
+  .navbar.active ul {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .navbar.active li {
+      margin: 10px 0;
+  }
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+

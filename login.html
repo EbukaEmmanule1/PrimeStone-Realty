@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - PrimeStone Realty</title>
+    <link rel="stylesheet" href="styless.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="logo-container">
+    <img src="img/prime-logo.png" alt="Logo" class="logo">
+    <p class="site-name">PrimeStone Realty</p>
+  </div>
+    <div class="form-container">
+        <h2>Login</h2>
+        <!-- Login Form -->
+<form id="login-form">
+
+  <label for="login-name">Name:</label>
+  <input type="Name" id="login-name" required>
+
+  <label for="login-email">Email:</label>
+  <input type="email" id="login-email" required>
+  
+  <label for="login-password">Password:</label>
+  <input type="password" id="login-password" required>
+  
+  <button type="submit">Login</button>
+  
+  <div id="login-message" class="message"></div>
+</form>
+
+        <p>Don't have an account? <a href="signup.html">Sign up here</a>.</p>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
